@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>Machine Learning NoteBook 0817 | David Personal Blog</title>
+
+
+    <meta name="keywords" content="Code, Notebook, MachineLearning">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="8&#x2F;17: done   9:00 - 10:00 testing the model  10:00 - 11:30 nothing happened  1:00 - 4:00 finish the main figure 1   current status the result from yesterday have a large fluctuation, so we retrain th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning NoteBook 0817">
+<meta property="og:url" content="https://david-bominwei.github.io/08/17/2021/20210817-research-machinelearning-research-notebook/index.html">
+<meta property="og:site_name" content="David Personal Blog">
+<meta property="og:description" content="8&#x2F;17: done   9:00 - 10:00 testing the model  10:00 - 11:30 nothing happened  1:00 - 4:00 finish the main figure 1   current status the result from yesterday have a large fluctuation, so we retrain th">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/a-0817-Fig1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/a-0817-Fig2-v2.png">
+<meta property="article:published_time" content="2021-08-17T06:16:46.000Z">
+<meta property="article:modified_time" content="2022-12-28T12:21:04.923Z">
+<meta property="article:author" content="David W">
+<meta property="article:tag" content="Code">
+<meta property="article:tag" content="Notebook">
+<meta property="article:tag" content="MachineLearning">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/a-0817-Fig1.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Machine Learning NoteBook 0817
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/08/" class="post-meta__date button">2021-08-17</a>
+        
+    <span class="separate-dot"></span><a href="/categories/Technique-Sharing/" class="button">Technique Sharing</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <blockquote>
+<p><strong>8/17: done</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 9:00 - 10:00 testing the model</li>
+<li><input disabled="" type="checkbox"> 10:00 - 11:30 nothing happened</li>
+<li><input disabled="" type="checkbox"> 1:00 - 4:00 finish the main figure 1</li>
+</ul>
+</blockquote>
+<h2 id="current-status"><a href="#current-status" class="headerlink" title="current status"></a>current status</h2><ul>
+<li>the result from yesterday have a large fluctuation, so we retrain the model with a lower <code>lr</code>:<br><img src="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/a-0817-Fig1.png" alt="Figure"></li>
+</ul>
+<h2 id="need-to-do-tomorrow"><a href="#need-to-do-tomorrow" class="headerlink" title="need to do tomorrow"></a>need to do tomorrow</h2><h2 id="notice"><a href="#notice" class="headerlink" title="notice"></a>notice</h2><h2 id="figures-and-reference-for-paper"><a href="#figures-and-reference-for-paper" class="headerlink" title="figures and reference for paper"></a>figures and reference for paper</h2><ul>
+<li><p>table for draw the figure on after each step the molecular and sequence remain:</p>
+<table>
+<thead>
+<tr>
+<th>step</th>
+<th>description</th>
+<th>data</th>
+<th>mol</th>
+<th>seq</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>original</td>
+<td>2278226</td>
+<td>986143</td>
+<td>8005</td>
+</tr>
+<tr>
+<td>1</td>
+<td>drop multichain</td>
+<td>2169710</td>
+<td>944576</td>
+<td>7850</td>
+</tr>
+<tr>
+<td>2</td>
+<td>only keep data with $K_i$ value</td>
+<td>490605</td>
+<td>204901</td>
+<td>3404</td>
+</tr>
+<tr>
+<td>3</td>
+<td>calculate the number of time that molecular and sequence occur, remove data with molecular occur less than 3 times and sequence occur less than 6 times</td>
+<td>288115</td>
+<td>55924</td>
+<td>1872</td>
+</tr>
+<tr>
+<td>4</td>
+<td>remove invalid $K_i$ value(e.g. $K_i$ = 0)</td>
+<td>250481</td>
+<td>54216</td>
+<td>1846</td>
+</tr>
+<tr>
+<td>5</td>
+<td>embed molecular and sequence, remove the data which cannot be embedded</td>
+<td>250344</td>
+<td>54177</td>
+<td>1844</td>
+</tr>
+<tr>
+<td>6</td>
+<td>remove $pK_i(log10 K_i)$ with higher than $8$</td>
+<td>249517</td>
+<td>54135</td>
+<td>1844</td>
+</tr>
+</tbody></table>
+<ul>
+<li>the figure:</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/a-0817-Fig2-v2.png" alt="Figure"></p>
+</li>
+</ul>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-12-28</p></div> 
+    <div class="post-entry__tags"><a href="/tags/Code/" class="post-tags__link button"># Code</a><a href="/tags/Notebook/" class="post-tags__link button"># Notebook</a><a href="/tags/MachineLearning/" class="post-tags__link button"># MachineLearning</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/09/01/2021/20210914-aJourneyWithEngineeringAndComputation/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            VEX: a journey with engineering and computation
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/08/16/2021/20210816-research-machinelearning-research-notebook/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            Machine Learning NoteBook 0816
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">David Personal Blog</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
