@@ -16,16 +16,26 @@
     <!--icon-->
 
     
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/icon.ico">
     
     
+        <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/iconsmall.png">
     
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/iconmid.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/icontrue.png">
+    
+    
+        <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/David-BominWei/Blog-Image/icon.svg?">
     
 
 
     <!-- meta -->
 
 
-<title>no title | David Personal Blog</title>
+<title>Blog | David Personal Blog</title>
 
 
 
@@ -38,19 +48,41 @@
 <meta property="og:url" content="https://david-bominwei.github.io/home/index.html">
 <meta property="og:site_name" content="David Personal Blog">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-12-28T12:21:04.931Z">
-<meta property="article:modified_time" content="2022-12-28T12:21:04.931Z">
+<meta property="article:published_time" content="2022-09-08T03:48:05.245Z">
+<meta property="article:modified_time" content="2022-09-08T03:48:05.245Z">
 <meta property="article:author" content="David W">
 <meta name="twitter:card" content="summary_large_image">
 
-
+    
     
 <link rel="stylesheet" href="/css/style/main.css">
  
 
     
+<link rel="stylesheet" href="/css/home/owl.carousel.css">
+ 
+
+<link rel="stylesheet" href="/css/home/animate.css">
+
+
+<link rel="stylesheet" href="/css/home/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/css/home/magnific-popup.css">
+
+
+<link rel="stylesheet" href="/css/home/index.css">
+
+
+<link rel="stylesheet" href="/css/home/Bubble.css">
+
+
     
-        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
         
     
 
@@ -58,106 +90,448 @@
     
 
     
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
 
      
 
     <!-- custom head -->
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+
+<meta name="generator" content="Hexo 5.4.2"></head>
 
     <body>
-        <div id="app" tabindex="-1">
-            <header class="header">
+        <div id="app">
+            <header class="header" id="header">
+  <div class="content">
     <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">Demo</span>
+        <a href="/home" class="button">
+            <!-- <span class="logo__text">David&#39;s Blog</span> -->
+            <img class="logo-box" src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/logo.png" alt="">
         </a>
     </div>
     <div class="header__right">
         
             <div class="navbar__menus">
                 
-                    <a href="/" class="navbar-menu button">首页</a>
+                    <a href="/home/" class="navbar-menu button">Home</a>
                 
-                    <a href="/tags/" class="navbar-menu button">标签</a>
+                    <a href="/" class="navbar-menu button">Blog</a>
                 
-                    <a href="/archives/" class="navbar-menu button">归档</a>
+                    <a href="/categories/" class="navbar-menu button">Categories</a>
                 
-                    <a href="/friends/" class="navbar-menu button">友链</a>
+                    <a href="/tags/" class="navbar-menu button">Tags</a>
                 
-                    <a href="/page/" class="navbar-menu button">Page</a>
+                    <a href="/archives/" class="navbar-menu button">Archives</a>
                 
             </div>
         
         
         
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
 
         
         
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
 
         
             <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
             <div class="dropdown-menus" id="dropdown-menus">
                 
-                    <a href="/" class="dropdown-menu button">首页</a>
+                    <a href="/home/" class="dropdown-menu button">Home</a>
                 
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                    <a href="/" class="dropdown-menu button">Blog</a>
                 
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                    <a href="/categories/" class="dropdown-menu button">Categories</a>
                 
-                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                    <a href="/tags/" class="dropdown-menu button">Tags</a>
                 
-                    <a href="/page/" class="dropdown-menu button">Page</a>
+                    <a href="/archives/" class="dropdown-menu button">Archives</a>
                 
             </div>
         
     </div>
+  </div>
 </header>
 
 
-            <main class="main">
+            
+<main class="main" style="padding: 0;">
+  <div class="hero-slider">
     
-
-<div class="post-title">
-    <h1 class="post-title__text">
-        no title
-    </h1>
-    <div class="post-title__meta">
-        <a href="/archives/2022/12/" class="post-meta__date button">2022-12-28</a>
-        
- 
-        
-    
-    
-
-
- 
-
- 
+      <div class="single-slide" style="background-image: url('https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/banner/1.jpg')">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2>Apollo: my brother and my mission</h2>
+                            <p>My brother Apollo is like a mirror for me, and the time I spend with him is like experiencing childhood once more. The divine kindness of him always inspires me to hold more kindness to the world and to be more patient and willing to help others.</p>
+                            <div class="slide-btn">
+                                <a href="/08/27/2022/20220827-myLittleBrotherAndMyBigMission/" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-
-
-<article class="post content-card">
-    <div class="post__header"></div>
-    <div class="post__content">
-        
+    
+      <div class="single-slide" style="background-image: url('https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/banner/2.jpg')">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2>The path of my research</h2>
+                            <p>I&#39;ve spent two years trying to solve the COVID-19 problems with computational and AI technology, and I believe computation plays a critical role in solving the problems facing humanity, although AI itself could be another problem.</p>
+                            <div class="slide-btn">
+                                <a href="/07/29/2022/20220729-ThePathOfMyResearch/" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-     
-    <div class="post-footer__meta"><p>updated at 2022-12-28</p></div> 
-    <div class="post-entry__tags"></div> 
-</article>
 
+    
+      <div class="single-slide" style="background-image: url('https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/banner/3.jpg')">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2>More than iGEM</h2>
+                            <p>iGEM is one of the team competitions I have participated over the longest time. Even though I am only a supporting role in this synthetic biology-based competition, it very much aligns with my personal values and the characteristics of computer science, that is, to become stronger in the process of helping others. More importantly, this competition has allowed me to make a lot of good friends for a lifetime.</p>
+                            <div class="slide-btn">
+                                <a href="/11/21/2021/20211121-iGEMandFriends/" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    
+      <div class="single-slide" style="background-image: url('https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/banner/4.jpg')">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2>Brilliant ideas and designs from my engineering projects</h2>
+                            <p>My engineering teacher claimed that he would use my creations as examples for future courses, an honor I think worth sharing on my personal blog.</p>
+                            <div class="slide-btn">
+                                <a href="/06/23/2022/20220623-BrilliantIdeasAndDesignsFromMyEngineeringProjects/" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    
+      <div class="single-slide" style="background-image: url('https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/banner/5.jpg')">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2>VEX and me</h2>
+                            <p>My love for STEM, my passion for problem-solving, and some of my life-long friends all dated back to my first VEX robotics experience.</p>
+                            <div class="slide-btn">
+                                <a href="/09/14/2021/20210914-aJourneyWithEngineeringAndComputation/" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    
+  </div>
+  <div class="about" id="about">
+    <!-- Extra Info -->
+    <div class="extra-info">
+      <div class="container">
+        <ul class="row">
+          <li class="birthdate col-md-2 col-sm-2 col-xs-6">
+            <span class="head">Birthdate</span>
+            <span>2004-04-09</span>
+          </li>
+          <li class="work-type col-md-4 col-sm-4 col-xs-6">
+            <span class="head">School</span>
+            <span>PRISMS, Princeton, New Jersey</span>
+          </li>
+          <li class="phone-no col-md-3 col-sm-3 col-xs-6">
+            <span class="head">Phone No</span>
+            <span>(609) 356-3006</span>
+          </li>
+          <li class="email col-md-3 col-sm-3 col-xs-6">
+            <span class="head">Email Address</span>
+            <span>David.wbm.2022@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Author Info -->
+    <div class="author-info container">
+      <div class="section-title">
+        <span>About Me</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="info row">
+        <figure class="col-md-5 col-sm-6 author-pic"><img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/me.jpg" alt="author-pic"></figure>
+        <div class="desc col-md-7 col-sm-6">
+          <!-- <p>Welcome to my world! Here you can find stories about me.You will resonate with me a lot especially if you have a younger brother or if you like caring for children.If you want to know in depth about machine learning and drug repurposing, you can contact me via email. You can also follow go on to biorxiv to read my research paper.<br/>
+            <br />
+            <a target="_blank" rel="noopener" href="https://www.biorxiv.org/content/10.1101/2021.08.11.455941">https://www.biorxiv.org/content/10.1101/2021.08.11.455941 </a> 
+            <a target="_blank" rel="noopener" href="https://www.biorxiv.org/content/10.1101/2021.12.01.470868">https://www.biorxiv.org/content/10.1101/2021.12.01.470868</a>
+          </p> -->
+          <p>
+            Welcome to my world! Here you can find stories about me.You will resonate with me a lot especially if you have a younger brother or if you like caring for children.If you want to know in depth about machine learning and drug repurposing, you can contact me via email. 
+            <br />
+            This is also a diary for younger brother, too. We haven't seen each other for a long time, and I hope this blog become his company as he grows up.
+            <p>You can also read my research paper if you are interested.</p>   
 
+            <label>SARS-COV-2 mutation prediction, on bioRxiv</label><br />
+            <a target="_blank" rel="noopener" href="https://www.biorxiv.org/content/10.1101/2021.08.11.455941">https://www.biorxiv.org/content/10.1101/2021.08.11.455941</a><br />
+            <label> DeepLPI</label><br />
+            <a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41598-022-23014-1"> https://www.nature.com/articles/s41598-022-23014-1</a>
+          </p>
+        </div>
+      </div>
+    </div> 
+  </div> <!-- End About Section -->
+  
+  <!-- Author Tags -->
+  <div class="author-tags">
+    <div class="section-title">
+      <span>My Tags</span>
+      <h2>My Tags</h2>
+    </div>
+    <div class="wrapper container">
+      <div class="tagcloud" style="visibility: visible; position: relative; min-height: 336px; min-width: 700px;">
+          <!-- bo大小 co颜色 -->
+          
+            <a class="b01 co06" href="/tags/MachineLearning ">MachineLearning </a>
+          
+            <a class="b01 co06" href="/tags/COVID-19">COVID-19</a>
+          
+            <a class="b01 co06" href="/tags/Drug-Discovery">Drug-Discovery</a>
+          
+            <a class="b04 co06" href="/tags/CS">CS</a>
+          
+            <a class="b04 co06" href="/tags/ISMB">ISMB</a>
+          
+            <a class="b02 co06" href="/tags/IEEE-ISEC">IEEE-ISEC</a>
+          
+            <a class="b03 co06" href="/tags/IDweek">IDweek</a>
+          
+            <a class="b02 co06" href="/tags/Drug-Target-Interaction">Drug-Target-Interaction</a>
+          
+            <a class="b03 co06" href="/tags/Genetic-Mutation">Genetic-Mutation</a>
+          
+            <a class="b04 co06" href="/tags/Notebook">Notebook</a>
+          
+            <a class="b01 co01" href="/tags/Community-Services">Community-Services</a>
+          
+            <a class="b01 co01" href="/tags/Volunteer">Volunteer</a>
+          
+            <a class="b04 co01" href="/tags/Friend">Friend</a>
+          
+            <a class="b04 co01" href="/tags/Trip">Trip</a>
+          
+            <a class="b03 co01" href="/tags/Coaching">Coaching</a>
+          
+            <a class="b04 co01" href="/tags/Apollo">Apollo</a>
+          
+            <a class="b04 co01" href="/tags/Charity">Charity</a>
+          
+            <a class="b01 co01" href="/tags/Family">Family</a>
+          
+            <a class="b03 co01" href="/tags/Siblings">Siblings</a>
+          
+            <a class="b04 co01" href="/tags/Little-Oak">Little-Oak</a>
+          
+            <a class="b01 co05" href="/tags/iGEM">iGEM</a>
+          
+            <a class="b01 co05" href="/tags/Engineering">Engineering</a>
+          
+            <a class="b01 co05" href="/tags/VEX">VEX</a>
+          
+            <a class="b02 co05" href="/tags/Robotics">Robotics</a>
+          
+            <a class="b03 co05" href="/tags/Competitions">Competitions</a>
+          
+            <a class="b04 co05" href="/tags/World-Champion">World-Champion</a>
+          
+            <a class="b02 co05" href="/tags/Gold-Medal">Gold-Medal</a>
+          
+            <a class="b03 co05" href="/tags/Team">Team</a>
+          
+            <a class="b04 co05" href="/tags/Friendship">Friendship</a>
+          
+      </div>
+    </div><!--wrapper-->
+  </div>
 
+  <div class="resume" id="resume">
+    <div class="timeline container">
+      <div class="section-title">
+        <span>My Resume</span>
+        <h2>My Resume</h2>
+      </div>
+  
+      <div class="education timeline-cont clearfix">
+        <span class="title"><strong>To be continued</strong></span>
+        <div class="group group-2 group-alter clearfix">
+          <div class="desc-box lf">
+            <h4>My First Publication</h4>
+            <p>My first scientific paper is published on Scientific Reports! You can find more about it in my blog post.</p>
+          </div>
+          <span class="point-circle"></span>
+          <span class="date">2022.10 </span>
+        </div>
+        <div class="group group-1 clearfix">
+          <span class="date">2020 - Now </span>
+          <span class="point-circle"></span>
+          <div class="desc-box rt">
+            <h4>Research, Computer Science Skills</h4>
+            <p>I’ve been engaged in independent research related to machine learning and have done three successive projects on COVID-19, recognized by professional conferences. I'm familiar with DNN, ResNet, LSTM and Pytorch</p>
+          </div>
+        </div>
+        <div class="group group-2 group-alter clearfix">
+          <div class="desc-box lf">
+            <h4>iGEM, Teamwork</h4>
+            <p>I’ve entered three iGEM competitions, and responsible for modeling all three time. I love working in a team. Thanks to my teammates for giving me a wealth of data to build models.</p>
+          </div>
+          <span class="point-circle"></span>
+          <span class="date">2019 - Now</span>
+        </div> 
+        <div class="group group-1 clearfix">
+          <span class="date">2015 - Now</span>
+          <span class="point-circle"></span>
+          <div class="desc-box rt">
+            <h4>VEX, community</h4>
+            <p>I had a seven-year relationship with VEX, from winning the Gold Medal at the World Championships in the VEX EDR, to mentoring elementary school students in the United States to learn VEX IQ, which helped me learn about computers, engineering and teamwork. </p>
+          </div>
+        </div>
+  
+        <div class="group group-2 group-alter clearfix">
+          <div class="desc-box lf">
+            <h4>Little Oak, Community Service </h4>
+            <p>Hard to imagine that I am still participating in the community service activities organized by my kindergarten to this day, and Little Oak is the origin of love that my family and I feel and pass on. I am also proud that I led the Little Oak Alumni Information Management System that is my contribution for this community that has given me love and strength. </p>
+          </div>
+          <span class="point-circle"></span>
+          <span class="date">Kindergarten - Now </span>
+        </div> 
+      </div> <!-- End Education -->
+  
+      <div class="end-box clearfix">
+        <span class="title"><strong>Beginning</strong></span>
+      </div>
+    </div> <!-- End Timeline -->  
+  </div> <!-- End Resume Section -->
+  
+  <div class="portfolio" id="portfolio">
+    <div class="works container">
+      <div class="section-title">
+        <span>My Portfolio</span>
+        <h2>My Portfolio</h2>
+      </div>
+      <ul class="filter-menu">
+        <li><a href="#non" class="filter-current" data-filter="*">All</a>&nbsp;//&nbsp;</li>
+        <li><a href="#non" data-filter=".print">team</a>&nbsp;//&nbsp;</li>
+        <li><a href="#non" data-filter=".design">family</a>&nbsp;//&nbsp;</li>
+        <li><a href="#non" data-filter=".illustration">trip</a></li>
+      </ul>
+      <ul class="filter-port row">
+        <li class="item print col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/1.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/1.jpg" rel="external noopener">Photo Wall<span><em>team</em></span></a>
+          </figure>
+        </li>
+        <li class="item design col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/4.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/4.jpg" rel="external noopener">Photo Wall<span><em>family</em></span></a>
+          </figure>
+        </li>
+        <li class="item illustration col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/7.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/7.jpg" rel="external noopener">Photo Wall<span><em>trip</em></span></a>
+          </figure>
+        </li>
+        <li class="item illustration col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/8.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/8.jpg" rel="external noopener">Photo Wall<span><em>trip</em></span></a>
+          </figure>
+        </li>
+        <li class="item print col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/2.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/2.jpg" rel="external noopener">Photo Wall<span><em>team</em></span></a>
+          </figure>
+        </li>
+        <li class="item print col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/3.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/3.jpg" rel="external noopener">Photo Wall<span><em>team</em></span></a>
+          </figure>
+        </li>
+        <li class="item illustration col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/9.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/9.jpg" rel="external noopener">Photo Wall<span><em>trip</em></span></a>
+          </figure>
+        </li>
+        <li class="item design col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/5.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/5.jpg" rel="external noopener">Photo Wall<span><em>family</em></span></a>
+          </figure>
+        </li>
+        <li class="item design col-md-4 col-sm-6">
+          <figure>
+            <img src="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/6.jpg" alt="placeholder-img">
+            <a target="_blank" href="https://raw.githubusercontent.com/David-BominWei/Blog-Image/1.1/home/photos/6.jpg" rel="external noopener">Photo Wall<span><em>family</em></span></a>
+          </figure>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div> <!-- End Portfolio Section -->
 </main>
 
             <footer class="footer">
-    
+     
+    <a href="#" class="button" id="b2t" aria-label="Back to Top" title="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
     
 
 
@@ -168,13 +542,43 @@
  
     
         
-        <p class="footer-copyright">
+        <!-- <p class="footer-copyright">
             Copyright © 2022 <a href="/">David Personal Blog</a>
-        </p>
+        </p> -->
     
     
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p> -->
 </footer>
+
+<script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+
+
+<script src="/js/home/jquery-2.2.4.min.js"></script>
+<script src="/js/home/vendor/owl.carousel.min.js"></script>
+<script src="/js/home/active.js"></script>
+<script src="/js/home/custom.js"></script>
+<script src="/js/home/preloader.js"></script>
+<script src="/js/home/Bubble.js"></script>
+<script type="text/javascript">
+  /*3D标签云*/
+  tagcloud({
+      selector: ".tagcloud",  //元素选择器
+      fontsize: 16,       //基本字体大小, 单位px
+      radius: 200,         //滚动半径, 单位px 页面宽度和高度的五分之一
+      mspeed: "slow",   //滚动最大速度, 取值: slow, normal(默认), fast
+      ispeed: "slow",   //滚动初速度, 取值: slow, normal(默认), fast
+      direction: 135,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
+      keep: false          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
+  });
+  window.addEventListener('scroll',function(){
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if(scrollTop>80) {
+      $('#header').addClass('add-bg');
+    }else{
+      $('#header').removeClass('add-bg');
+    }
+  })
+  </script>
 
         </div>
          
